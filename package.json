@@ -6,21 +6,23 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build": "expo build:web",
+    "vercel-build": "expo export --platform web"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.50.0",
-    "expo": "~53.0.11",
-    "expo-status-bar": "~2.2.3",
-    "firebase": "^11.9.1",
+    "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "^1.17.11",
+    "expo": "~53.0.12",
+    "expo-status-bar": "~1.12.0",
     "react": "19.0.0",
-    "react-native": "0.79.3",
     "react-dom": "19.0.0",
-    "react-native-web": "^0.20.0",
-    "@expo/metro-runtime": "~5.0.4"
+    "react-native": "0.74.3",
+    "react-native-web": "~0.20.0",
+    "@supabase/supabase-js": "^2.39.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@expo/webpack-config": "*"
   },
   "private": true
 }
