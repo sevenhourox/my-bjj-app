@@ -70,9 +70,9 @@ const VideoCourseApp = () => {
   const videos = [
     {
       id: 1,
-      title: 'Fundamentals - Closed Guard Armbar',
-      description: 'Learn the basic armbar from closed guard.',
-      url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      title: 'Professor Dave Intro + Half Guard',
+      description: 'Learn the basic half guard basics',
+      url: 'https://youtu.be/FzcHQ7-RHNY',
       premium: false
     },
     {
