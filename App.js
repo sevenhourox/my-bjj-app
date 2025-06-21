@@ -1,15 +1,12 @@
 i// ✅ All imports should be at the top
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useState } from 'react';
+import {
+  View, Text, StyleSheet, ScrollView, SafeAreaView,
+  Image, TextInput, TouchableOpacity, useColorScheme
+} from 'react-native';
+import { Linking } from 'react-native';
+import { WebView } from 'react-native-webview';
 import { createClient } from '@supabase/supabase-js';
-
-export function App() {
-  return <Text>Hello</Text>;
-}
-
-export default VideoCourseApp;
-
-
 
 const supabase = createClient('https://lvrukwnevxshclzmperz.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2cnVrd25ldnhzaGNsem1wZXJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5MzY2MDksImV4cCI6MjA2NTUxMjYwOX0.dUh68ZFt3CMbPIDwGwvddxuhrmDNnrRcch2f9XDFoKM');
 
