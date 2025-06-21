@@ -3,13 +3,14 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
-export default function App() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Hello World</Text>
-    </View>
-  );
+export function AnotherComponent() {
+  return <Text>Another</Text>;
 }
+
+export default function App() {
+  return <AnotherComponent />;
+}
+
 
 
 const supabase = createClient('https://lvrukwnevxshclzmperz.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2cnVrd25ldnhzaGNsem1wZXJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5MzY2MDksImV4cCI6MjA2NTUxMjYwOX0.dUh68ZFt3CMbPIDwGwvddxuhrmDNnrRcch2f9XDFoKM');
