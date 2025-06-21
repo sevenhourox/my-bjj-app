@@ -6,8 +6,7 @@ export default function App() {
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Test Screen Works</Text>
     </View>
-  );
-}
+ 
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient('https://lvrukwnevxshclzmperz.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2cnVrd25ldnhzaGNsem1wZXJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5MzY2MDksImV4cCI6MjA2NTUxMjYwOX0.dUh68ZFt3CMbPIDwGwvddxuhrmDNnrRcch2f9XDFoKM');
