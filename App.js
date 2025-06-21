@@ -3,13 +3,11 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
-export function AnotherComponent() {
-  return <Text>Another</Text>;
+export function App() {
+  return <Text>Hello</Text>;
 }
 
-export default function App() {
-  return <AnotherComponent />;
-}
+export default VideoCourseApp;
 
 
 
