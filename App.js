@@ -13,12 +13,15 @@ import {
 } from 'react-native';
 import { Linking } from 'react-native';
 import { WebView } from 'react-native-webview';
+// lib/supabase.js
+
 import { createClient } from '@supabase/supabase-js';
 
-// ✅ Supabase config (use your actual keys)
-const supabaseUrl = 'https://lvrukwnevxshclzmperz.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2cnVrd25ldnhzaGNsem1wZXJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5MzY2MDksImV4cCI6MjA2NTUxMjYwOX0.dUh68ZFt3CMbPIDwGwvddxuhrmDNnrRcch2f9XDFoKM';
-const supabase = createClient(supabaseUrl, supabaseKey);
+// ✅ These values must be set in Vercel or a local .env file
+const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.EXPO_PUBLIC_SUPABASE_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function App() {
   const [loading, setLoading] = useState(true);
