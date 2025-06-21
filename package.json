@@ -8,13 +8,13 @@
     "start": "serve web-build"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.43.6",
     "expo": "~53.0.11",
     "expo-status-bar": "~2.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.6",
-    "react-native-web": "~0.19.9"
+    "react-native-web": "~0.19.9",
+    "@supabase/supabase-js": "^2.43.6"
   },
   "devDependencies": {
     "serve": "^14.2.0"
