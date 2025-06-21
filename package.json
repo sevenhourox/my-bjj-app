@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "expo start",
+    "start": "expo start --web",
     "build": "expo export:web",
-    "start": "serve web-build"
+    "preview": "serve web-build"
   },
   "dependencies": {
     "expo": "~53.0.11",
@@ -18,5 +19,6 @@
   },
   "devDependencies": {
     "serve": "^14.2.0"
-  }
+  },
+  "private": true
 }
